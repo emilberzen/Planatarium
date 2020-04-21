@@ -43,17 +43,20 @@ public class InfoControl : MonoBehaviour
                 Image.sprite = TeleImage[0];
                 Header.text = "Brorfelde Observatorium";
                 Country.text = "Denmark";
-                Location.text = "60m";
-                Body.text = "Brorfelde Observatory is an astronomical observatory located in Brorfelde near Holbaek, Denmark. It is home to the Brorfelde Schmidt Telescope and was run as a branch of the Copenhagen University Observatory until 1996. It still has telescopes that are used by University of Copenhagen students, but the staff that manned them moved to the Rockefeller Complex in Copenhagen.The 77 - centimetre Schmidt telescope from 1966 at Brorfelde Observatory was originally equipped with photographic film, and an engineer is here showing the film-box, which was then placed behind the locker at the center of the telescope(at the telescope's prime focus).";
-            }
+                Location.text = "Brorfelde Observatorium, Denmark";
+                Body.text = "";
+                Debug.Log("Denmark Change Text");
+                    
+             }
             else if (hit.collider.gameObject.name == "Chile Parnal")
             {
 
                 Image.sprite = TeleImage[1];
                 Header.text = "Paranal Observatory";
                 Country.text = "Chile";
-                Location.text = "2600m";
-                Body.text = "Paranal Observatory is an astronomical observatory operated by the European Southern Observatory (ESO). It is located in the Atacama Desert of northern Chile on Cerro Paranal at 2,635 m (8,645 ft) altitude, 120 km (70 mi) south of Antofagasta. By total light-collecting area, it is the largest optical-infrared observatory in the Southern Hemisphere; worldwide, it is second to the Mauna Kea Observatory on Hawaii.";
+                Location.text = "Paranal Observatory, Chile";
+                Body.text = "The Very Large Telescope (VLT), the largest telescope on Paranal, is composed of four separate 8.2 m (320 in) telescopes. In addition, the four main telescopes can be used simultaneously for extra light gathering capacity, and for interferometry.";
+                Debug.Log("Parnal Change Text");
 
             }
             else if (hit.collider.gameObject.name == "Chile La Silla")
@@ -61,8 +64,9 @@ public class InfoControl : MonoBehaviour
                 Image.sprite = TeleImage[2];
                 Header.text = "La Silla Observatory";
                 Country.text = "Chile";
-                Location.text = "2400m";
-                Body.text = "La Silla Observatory is an astronomical observatory in Chile with three telescopes built and operated by the European Southern Observatory.The La Silla telescopes and instruments are located 150 km northeast of La Serena at the outskirts of the Chilean Atacama Desert, one of the driest and most remote areas of the world. Like other observatories in this geographical area, La Silla is located far from sources of light pollution and, like the Paranal Observatory, home to the Very Large Telescope, it has one of the darkest night skies on the Earth.";
+                Location.text = "La Silla Observatory, Chile";
+                Body.text = "ESO operates three major optical and near infrared telescopes at the La Silla site: the New Technology Telescope (NTT), the 3.6-m ESO Telescope, and the 2.2-m Max-Planck-ESO Telescope.";
+                Debug.Log("La Silla Change Text");
 
 
             }
@@ -78,10 +82,10 @@ public class InfoControl : MonoBehaviour
             {
 
                 Image.sprite = TeleImage[4];
-                Country.text = "South Africa";
-                Location.text = "1798m";
                 Header.text = "South African Astronomical Observatory";
-                Body.text = " South African Astronomical Observatory (SAAO) is the national centre for optical and infrared astronomy in South Africa. It was established in 1972. The observatory is run by the National Research Foundation of South Africa. The facility's function is to conduct research in astronomy and astrophysics. The primary telescopes are located in Sutherland, which is 370 kilometres (230 mi) from Observatory, Cape Town, where the headquarters is located.";
+                Country.text = "South Africa";
+                Location.text = "Cape Town, South Africa";
+                Body.text = "The primary telescopes are located in Sutherland, which is 370 kilometres (230 mi) from Observatory, Cape Town, where the headquarters is located.";
 
 
             }

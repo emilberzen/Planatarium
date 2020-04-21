@@ -42,21 +42,33 @@ public class CameraMove : MonoBehaviour
             //Earth.transform.Rotate(new Vector3(0, 0.001f, 0));
         }
 
-        //ZOOM
-        float fov = Camera.main.fieldOfView;
-        fov += Input.GetAxis("Mouse ScrollWheel") * -sensitivity;
-        fov = Mathf.Clamp(fov, minFov, maxFov);
-        Camera.main.fieldOfView = fov;
+        //You can't zoom when UI popup is active
 
+            //ZOOM
+            float fov = Camera.main.fieldOfView;
+            fov += Input.GetAxis("Mouse ScrollWheel") * -sensitivity;
+            fov = Mathf.Clamp(fov, minFov, maxFov);
+            Camera.main.fieldOfView = fov;
+
+
+
+
+        //Changeing the sensitivity of the rotation based on how near you are 
         if (fov < 26)
         {
 
             speed = speedNear;
         }
+        else if(fov > 26 && fov < 50)
+        {
+            speed = speedFar-2;
+        }
         else
         {
             speed = speedFar;
         }
+        
+
 
     }
 

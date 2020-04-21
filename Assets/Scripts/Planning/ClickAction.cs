@@ -155,7 +155,7 @@ public class ClickAction : MonoBehaviour
             else if(hit.collider.gameObject.name == "Earth" && UI.activeSelf == true)
             {
                 UI.SetActive(false);
-                Camera.main.DOFieldOfView(25, 2);
+                Camera.main.DOFieldOfView(30, 2);
                 Debug.Log("Zoom out");
 
 
