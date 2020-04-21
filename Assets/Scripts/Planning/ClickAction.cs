@@ -7,6 +7,7 @@ public class ClickAction : MonoBehaviour
 {
 
     public GameObject UI;
+   
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -33,7 +34,7 @@ public class ClickAction : MonoBehaviour
                 Debug.Log("You hit the Denmark Telescope");
                 Camera.main.transform.DOMove(new Vector3(-0.5110375f, 2.465688f, 1.630713f), 2);
                 Camera.main.transform.DORotate(new Vector3(55.275f, 162.6f, 0), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
                 UI.SetActive(true);
             }
             else if (hit.collider.gameObject.name == "Chile Parnal")
@@ -41,7 +42,7 @@ public class ClickAction : MonoBehaviour
                 
                 Camera.main.transform.DOMove(new Vector3(2.528032f, -1.166163f, 1.117641f), 2);
                 Camera.main.transform.DORotate(new Vector3(-22.875f, -113.85f, 0), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
                 UI.SetActive(true);
                 Debug.Log("You hit the London Telescope");
 
@@ -51,7 +52,7 @@ public class ClickAction : MonoBehaviour
                 UI.SetActive(true);
                 Camera.main.transform.DOMove(new Vector3(2.208235f, -1.749557f, 1.030898f), 2);
                 Camera.main.transform.DORotate(new Vector3(-35.675f, -115.025f, 0), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
                 Debug.Log("You hit the Chile La Silla");
 
             }
@@ -60,7 +61,7 @@ public class ClickAction : MonoBehaviour
                 UI.SetActive(true);
                 Camera.main.transform.DOMove(new Vector3(2.493308f, -1.157715f, 1.201296f), 2);
                 Camera.main.transform.DORotate(new Vector3(-22.7f, -115.725f, 0), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
                 Debug.Log("You hit the Chile Atacama");
 
             }
@@ -79,7 +80,7 @@ public class ClickAction : MonoBehaviour
 
                 Camera.main.transform.DOMove(new Vector3(0.538725f, 1.445267f, 2.573127f), 2);
                 Camera.main.transform.DORotate(new Vector3(28.8f, -168.175f, 0), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
 
                 UI.SetActive(true);
                 Debug.Log("You hit the LAq Telescope");
@@ -90,7 +91,7 @@ public class ClickAction : MonoBehaviour
                 UI.SetActive(true);
                 Camera.main.transform.DOMove(new Vector3(1.455225f, 1.042033f, -2.407589f), 2);
                 Camera.main.transform.DORotate(new Vector3(20.325f, -31.15f, 0f), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
                 Debug.Log("You hit the Hawaii Manua Kea");
 
             }
@@ -99,7 +100,7 @@ public class ClickAction : MonoBehaviour
                 UI.SetActive(true);
                 Camera.main.transform.DOMove(new Vector3(0.130209f, -2.972597f, 0.3830299f), 2);
                 Camera.main.transform.DORotate(new Vector3(-82.25001f, -161.225f, 0f), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
                 Debug.Log("You hit the South Pole Telescope");
 
             }
@@ -110,7 +111,7 @@ public class ClickAction : MonoBehaviour
                 UI.SetActive(true);
                 Camera.main.transform.DOMove(new Vector3(2.155519f, 2.063167f, 0.3115776f), 2);
                 Camera.main.transform.DORotate(new Vector3(43.45f, -98.22501f, 0f), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
                 Debug.Log("You hit the Yerkes Observatory");
 
             }
@@ -119,7 +120,7 @@ public class ClickAction : MonoBehaviour
                 UI.SetActive(true);
                 Camera.main.transform.DOMove(new Vector3(2.447473f, 1.610798f, -0.6443663f), 2);
                 Camera.main.transform.DORotate(new Vector3(32.475f, -75.25f, 0f), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
                 Debug.Log("Kitt Peak Observatory");
 
             }
@@ -128,7 +129,7 @@ public class ClickAction : MonoBehaviour
                 UI.SetActive(true);
                 Camera.main.transform.DOMove(new Vector3(2.453713f, 0.9630774f, 1.432402f), 2);
                 Camera.main.transform.DORotate(new Vector3(18.725f, -120.275f, 0f), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
                 Debug.Log("You hit the Arecibo Observatory");
             }
             else if (hit.collider.gameObject.name == "BTA-6 Russia")
@@ -137,7 +138,7 @@ public class ClickAction : MonoBehaviour
 
                 Camera.main.transform.DOMove(new Vector3(-1.662475f, 2.086801f, 1.371656f), 2);
                 Camera.main.transform.DORotate(new Vector3(44.075f, 129.525f, 0f), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
                 Debug.Log("You hit the Russia Telescope");
 
             }
@@ -147,14 +148,15 @@ public class ClickAction : MonoBehaviour
 
                 Camera.main.transform.DOMove(new Vector3(-0.9204969f, -1.583087f, -2.376241f), 2);
                 Camera.main.transform.DORotate(new Vector3(-31.85f, 21.175f, 0f), 2f);
-                Camera.main.DOFieldOfView(7, 2);
+                Camera.main.DOFieldOfView(10, 2);
                 Debug.Log("You hit the Sydney Telescope");
 
             }
             else if(hit.collider.gameObject.name == "Earth" && UI.activeSelf == true)
             {
                 UI.SetActive(false);
-                Camera.main.DOFieldOfView(20, 2);
+                Camera.main.DOFieldOfView(25, 2);
+                Debug.Log("Zoom out");
 
 
             }

@@ -48,7 +48,7 @@ public class CameraMove : MonoBehaviour
         fov = Mathf.Clamp(fov, minFov, maxFov);
         Camera.main.fieldOfView = fov;
 
-        if (fov < 20)
+        if (fov < 26)
         {
 
             speed = speedNear;

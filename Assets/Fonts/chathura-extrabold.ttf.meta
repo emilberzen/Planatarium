@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 6f9e51b1f9df3ab4aaabe363f615a065
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Chathura
+  fontNames:
+  - Chathura
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b481d021559deb947a7fc911f5e1c7e3, type: 3}
+  - {fileID: 12800000, guid: 1aae987db7174b54b879f0f4b0dfe9a7, type: 3}
+  - {fileID: 12800000, guid: d2a0a54f8c4bcf74a9b81a6ff07a7e14, type: 3}
+  - {fileID: 12800000, guid: b9db0c5fd291fa049a592da37aa40b14, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
